@@ -2,7 +2,7 @@
 
 - Author(s):     [@zz-jason](https://github.com/zz-jason)
 - Last updated:  2018-07-01
-- Discussion at: https://github.com/pingcap/tidb/pull/6852
+- Discussion at: https://tidb/pull/6852
 
 ## Abstract
 
@@ -22,7 +22,7 @@ It’s easy to implement a new aggregate function under this framework. But it h
 
 ## Proposal
 
-In this PR: https://github.com/pingcap/tidb/pull/6852, a new framework was proposed. The new framework locates in the “executor/aggfuncs” package.
+In this PR: https://tidb/pull/6852, a new framework was proposed. The new framework locates in the “executor/aggfuncs” package.
 
 In the new execution framework, every aggregate function implements the `AggFunc` interface. It uses the `PartialResult`, which is actually a `unsafe.Pointer`, as the type of the partial result for every aggregate function. `unsafe.Pointer` allows the partial result to be any kind of data object.
 

@@ -578,7 +578,7 @@ func NewCIStr(s string) (cs CIStr) {
 
 // UnmarshalJSON implements the user defined unmarshal method.
 // CIStr can be unmarshaled from a single string, so PartitionDefinition.Name
-// in this change https://github.com/pingcap/tidb/pull/6460/files would be
+// in this change https://tidb/pull/6460/files would be
 // compatible during TiDB upgrading.
 func (cis *CIStr) UnmarshalJSON(b []byte) error {
 	type T CIStr

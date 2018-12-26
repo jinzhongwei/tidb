@@ -2,7 +2,7 @@
 
 - Author(s):     [Yilin Zhao](https://github.com/leoppro)
 - Last updated:  2018-12-05
-- Discussion at: https://github.com/pingcap/tidb/issues/8532
+- Discussion at: https://tidb/issues/8532
 
 ## Abstract
 
@@ -79,7 +79,7 @@ We only need to ensure that the ASTs parsed from the input SQL statement and the
 ### Stage
 
 Considering that some ast.Node depends on another ast.Node, we divide sub-tasks into four stages.  
-Detailed list at [pingcap/tidb#8532](https://github.com/pingcap/tidb/issues/8532).
+Detailed list at [pingcap/tidb#8532](https://tidb/issues/8532).
 
 ### Example
 
@@ -128,4 +128,4 @@ func (n *DropDatabaseStmt) Restore(ctx *RestoreCtx) error {
 
 ## Open issues
 
-https://github.com/pingcap/tidb/issues/8532
+https://tidb/issues/8532

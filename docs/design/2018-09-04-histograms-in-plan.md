@@ -137,8 +137,8 @@ There’s no compatibility issue.
 
 ## Implementation
 
-First, maintain the histogram in `DataSource`. In this step, there will be some changes in the `statistics` package to make it work. It may take a little long time to do this. [PR#7385](https://github.com/pingcap/tidb/pull/7385)
+First, maintain the histogram in `DataSource`. In this step, there will be some changes in the `statistics` package to make it work. It may take a little long time to do this. [PR#7385](https://tidb/pull/7385)
 
-Then, all changes will be things inside `statsInfo`, which won’t affect other parts. It may not take too much time to implement this part. Like [PR#7595](https://github.com/pingcap/tidb/pull/7595)
+Then, all changes will be things inside `statsInfo`, which won’t affect other parts. It may not take too much time to implement this part. Like [PR#7595](https://tidb/pull/7595)
 
 The future work will depend on the benchmark result of the join reorder algorithm.

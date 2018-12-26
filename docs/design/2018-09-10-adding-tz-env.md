@@ -10,7 +10,7 @@ When it comes to time-related calculation, it is hard for the distributed system
 
 ## Background
 
-After we solved the daylight saving time issue, we found the performance degradation of TiKV side. Thanks for the investigation done by engineers from TiKV. The root cause of such performance degradation is that TiKV infers `System` timezone name via a third party lib, which calls a syscall and costs a lot. In our internal benchmark system, after [this PR](https://github.com/pingcap/tidb/pull/6823), our codebase is 1000 times slower than before. We have to address this. 
+After we solved the daylight saving time issue, we found the performance degradation of TiKV side. Thanks for the investigation done by engineers from TiKV. The root cause of such performance degradation is that TiKV infers `System` timezone name via a third party lib, which calls a syscall and costs a lot. In our internal benchmark system, after [this PR](https://tidb/pull/6823), our codebase is 1000 times slower than before. We have to address this. 
 
 Another problem needs also to be addressed is the potentially incosistent timezone name across multiple `TiDB` instances. `TiDB` instances may reside at different timezone which could cause incorrect calculation when it comes to time-related calculation. Just getting `TiDB`'s sytem timezone could be broken. We need find a way to ensure the uniqueness of global timezone name across multiple `TiDB`'s timezone name and also to leverage to resolve the performance degradation. 
 
@@ -52,5 +52,5 @@ In order to ensure the uniqueness of global timezone across multiple `TiDB` inst
  
 ## Open issues (if applicable)
 
-PR of this proposal: https://github.com/pingcap/tidb/pull/7638/files
+PR of this proposal: https://tidb/pull/7638/files
 PR of change TZ loading logic of golang: https://github.com/golang/go/pull/27570

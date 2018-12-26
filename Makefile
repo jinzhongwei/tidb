@@ -29,12 +29,12 @@ GOFAIL_ENABLE  := $$(find $$PWD/ -type d | grep -vE "(\.git|tools)" | xargs gofa
 GOFAIL_DISABLE := $$(find $$PWD/ -type d | grep -vE "(\.git|tools)" | xargs gofail disable)
 
 LDFLAGS += -X "github.com/pingcap/parser/mysql.TiDBReleaseVersion=$(shell git describe --tags --dirty)"
-LDFLAGS += -X "github.com/pingcap/tidb/util/printer.TiDBBuildTS=$(shell date -u '+%Y-%m-%d %I:%M:%S')"
-LDFLAGS += -X "github.com/pingcap/tidb/util/printer.TiDBGitHash=$(shell git rev-parse HEAD)"
-LDFLAGS += -X "github.com/pingcap/tidb/util/printer.TiDBGitBranch=$(shell git rev-parse --abbrev-ref HEAD)"
-LDFLAGS += -X "github.com/pingcap/tidb/util/printer.GoVersion=$(shell go version)"
+LDFLAGS += -X "tidb/util/printer.TiDBBuildTS=$(shell date -u '+%Y-%m-%d %I:%M:%S')"
+LDFLAGS += -X "tidb/util/printer.TiDBGitHash=$(shell git rev-parse HEAD)"
+LDFLAGS += -X "tidb/util/printer.TiDBGitBranch=$(shell git rev-parse --abbrev-ref HEAD)"
+LDFLAGS += -X "tidb/util/printer.GoVersion=$(shell go version)"
 
-TEST_LDFLAGS =  -X "github.com/pingcap/tidb/config.checkBeforeDropLDFlag=1"
+TEST_LDFLAGS =  -X "tidb/config.checkBeforeDropLDFlag=1"
 
 CHECK_LDFLAGS += $(LDFLAGS) ${TEST_LDFLAGS}
 
@@ -205,7 +205,7 @@ gofail-disable:
 	@$(GOFAIL_DISABLE)
 
 checkdep:
-	$(GO) list -f '{{ join .Imports "\n" }}' github.com/pingcap/tidb/store/tikv | grep ^github.com/pingcap/parser$$ || exit 0; exit 1
+	$(GO) list -f '{{ join .Imports "\n" }}' tidb/store/tikv | grep ^github.com/pingcap/parser$$ || exit 0; exit 1
 
 tools/bin/megacheck:
 	cd tools/check; \

@@ -1231,7 +1231,559 @@
 			"path": "sourcegraph.com/sourcegraph/appdash/opentracing",
 			"revision": "4c381bd170b46de54530ae6170358c98fdaa515f",
 			"revisionTime": "2018-05-31T10:04:31Z"
+		},
+		{
+			"checksumSHA1": "on/Dk9+RfuFPDpzlD7+GZoL3c5Y=",
+			"path": "tidb/cmd/benchdb",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "O0ax1Uk6c18q7tkT4opj1snT8Iw=",
+			"path": "tidb/cmd/benchfilesort",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "iEomOVNjZWddM5kazZ+8nVikPpY=",
+			"path": "tidb/cmd/benchkv",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "xwtonPh28OBW+duGH3CkkFTH2KQ=",
+			"path": "tidb/cmd/benchraw",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "Na0QUFOAoVw1htHIApdQzz5EHKo=",
+			"path": "tidb/cmd/explaintest",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "5lRQT5tkNK5iHSss2SB64LrUuis=",
+			"path": "tidb/cmd/importer",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "TBMH6z3KDXIkCS/UBAC2qVD6T6U=",
+			"path": "tidb/config",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "qspe/V8cG31RYRValDW8DD0PDcw=",
+			"path": "tidb/ddl",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "g5dqk0jeyp7N7BLHbs5/osWN+uE=",
+			"path": "tidb/ddl/failtest",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "jsIrPT0bF6z+L5qvMlVBfIax02E=",
+			"path": "tidb/ddl/testutil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "ep5y1u8Go00ydb08Z7+hN5yIzaU=",
+			"path": "tidb/ddl/util",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "WFXZuhcvi4knY1umIi8TOj9yfNE=",
+			"path": "tidb/distsql",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "8GrMCJsT2uWe6dUkYcUWXb3LVe8=",
+			"path": "tidb/domain",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "ebgKJ0raug5ErwT2MS6NpRit29E=",
+			"path": "tidb/executor",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "4CIz1bzXsgdxNq3WU5GE3kOv8IU=",
+			"path": "tidb/executor/aggfuncs",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "YbBXmUBXwY1KBC8FKWGzhGWUsIs=",
+			"path": "tidb/executor/seqtest",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "FDw8ubGTiuKCRcXBc0dAUujPuwQ=",
+			"path": "tidb/expression",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "GxIlT0DcX+LfMStZO8VVJJfbJR8=",
+			"path": "tidb/expression/aggregation",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "wJ2Vf5jYYyHq23Sx/LfyNnTBsFg=",
+			"path": "tidb/infoschema",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "EoIdND0sfxc3zfDyTJF0yCeRpjA=",
+			"path": "tidb/kv",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "y7pXvk+/tWdkKrqPlrAvjOt/8ow=",
+			"path": "tidb/meta",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "sH0gT797ZyhKaq8pBBfb8ci8iqw=",
+			"path": "tidb/meta/autoid",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "GpLpqMkcgUevEylXBzXRqC0uGfM=",
+			"path": "tidb/metrics",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "IGM6FrurELGBGRAc09OrvIDxYvo=",
+			"path": "tidb/owner",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "kqdSZIvE02Xq6TLfhtZic5sRv98=",
+			"path": "tidb/perfschema",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "mzO76dSq5X9kemHVNInpUTVio/0=",
+			"path": "tidb/planner",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "BtSIDA34+2ue+cqAsXqFnRXO5bE=",
+			"path": "tidb/planner/cascades",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "XK4LbLeBjLuAKweSyfzw8UyvIw4=",
+			"path": "tidb/planner/core",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "6hmUcxwsoTpe8YLXNPR/TXx4LUg=",
+			"path": "tidb/planner/implementation",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "i5/+qF/iiBwQhOieq4GFehwm/L8=",
+			"path": "tidb/planner/memo",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "LjGyiudxFAiZV21rd5UhUx7RwG8=",
+			"path": "tidb/planner/property",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "rWFv2PMi89Xu+XCwKAkhanEIZIk=",
+			"path": "tidb/privilege",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "jSEPC2KVE+qyYvUWEPzw7B3/fj4=",
+			"path": "tidb/privilege/privileges",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "GrI3YsvjNsWVBPI3JHF9FG73EAA=",
+			"path": "tidb/server",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "jRyr/PcJJCyxS079x9lAJ3G+Y1c=",
+			"path": "tidb/session",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "Yq4B22G8sYKwyZKcUFT/FfVKaD4=",
+			"path": "tidb/sessionctx",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "kVidyK0F6D7RxlpXJdbysf38FXw=",
+			"path": "tidb/sessionctx/binloginfo",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "lDZCM6H/SR3l3U/9ER+NBxGxgoM=",
+			"path": "tidb/sessionctx/stmtctx",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "hl0pBlRpUh2QrHP3YlI26gi1aQ4=",
+			"path": "tidb/sessionctx/variable",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "a/mm1rCMxGcnCKRuuOWBcrBWRXE=",
+			"path": "tidb/statistics",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "NNlbbgeOu96rzvCoo/8ZuzQCP6Y=",
+			"path": "tidb/store",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "ySPCZfibdbM3OrApmgNBk+kfcYg=",
+			"path": "tidb/store/mockoracle",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "Um/PBwevSJTU/CgdevpevvtL9Bs=",
+			"path": "tidb/store/mockstore",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "uAnCL888MKkSeGo3WC1/I1pLSK8=",
+			"path": "tidb/store/mockstore/mocktikv",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "BKEWolobFpKSBNKeG9RGWqKz3vM=",
+			"path": "tidb/store/tikv",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "5s6p8QFwAfYNAacr6TAOKG1xsL8=",
+			"path": "tidb/store/tikv/gcworker",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "s5xhhAftEiIy6eZXD7ersrUNMUQ=",
+			"path": "tidb/store/tikv/latch",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "pQNCxHyN+p27PT7FD9evbGHGbgg=",
+			"path": "tidb/store/tikv/oracle",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "sbR+Fy8eAHabBGi4XmxRrYIBrOU=",
+			"path": "tidb/store/tikv/oracle/oracles",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "XUHzwiq2USS+x12uKNZy+VMLsQg=",
+			"path": "tidb/store/tikv/tikvrpc",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "3b1BNyiBLGUr5yxqTyQttZJhr1Y=",
+			"path": "tidb/structure",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "7Pl09A7wQK7VzdX3LMdCLPW0lOE=",
+			"path": "tidb/table",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "9rHYekac2F0FsC0KMh1PesMhiyI=",
+			"path": "tidb/table/tables",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "cdcb89aPbWyuXJsNvbAmTugfrIM=",
+			"path": "tidb/tablecodec",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "lLY7A+fcYYAiw7z56u0VvuzSmT4=",
+			"path": "tidb/terror",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "rhNB31SSj9wTM3yTQjg0w0iWF88=",
+			"path": "tidb/tidb-server",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "ta13XOPY7KG23Cz3h5WZzkX2z5I=",
+			"path": "tidb/types",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "JIwVEzvvPTcWQReZ73dZpEfTPFU=",
+			"path": "tidb/types/json",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "sfUUPWbvNbl+hv7r+uieE68lAwA=",
+			"path": "tidb/types/parser_driver",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "/G9qs4Lxm2CE1QZC2444wrQznH0=",
+			"path": "tidb/util",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "xv5mzRtyk8ZXUU+KvaMhyAzAHAs=",
+			"path": "tidb/util/admin",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "kGlfv+76/a4U/MRwq/y+CB1gWsY=",
+			"path": "tidb/util/arena",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "m82uunSpyNE3cgPSgH3prk0eSPs=",
+			"path": "tidb/util/chunk",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "7Pk9pDXn/3IydZW+2HJqHPg39wU=",
+			"path": "tidb/util/codec",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "puoUN+xqWuh5ONUOOSszSXsWk7U=",
+			"path": "tidb/util/disjointset",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "gX1QAsiK7vrKwu+fhAeEjFa8CTc=",
+			"path": "tidb/util/encrypt",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "CeiLbVheI6ttFtqhyKlUlh+FOGM=",
+			"path": "tidb/util/execdetails",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "2w/uzqMpWL6vbml6074lQfKL1iE=",
+			"path": "tidb/util/filesort",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "utAvFa1xxhit3TdqFIPnDvLipLo=",
+			"path": "tidb/util/format",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "I2dlblSonim9GVKudblmhzUUOIQ=",
+			"path": "tidb/util/hack",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "X+PRiCiPhiL0GP4gssfrcoTxzu8=",
+			"path": "tidb/util/israce",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "nHtBWRiFSbvb3FA0BmniR6MKKW8=",
+			"path": "tidb/util/kvcache",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "pHMgDddPdNCByHRelqxYodzzKPY=",
+			"path": "tidb/util/kvencoder",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "U3bS6FRpUrZYn1XG+rX84KpKPAk=",
+			"path": "tidb/util/logutil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "7MXGYroH1FmWNHM7oKdjYnbKAHY=",
+			"path": "tidb/util/memory",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "4fxPyPxsJmrb4EKbpgBAFqSpiok=",
+			"path": "tidb/util/mock",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "7cfXzCQGMD7HVm0llZ7LHt/K6Ys=",
+			"path": "tidb/util/mvmap",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "v4nGnMLoqmRufVePXyfVIHN+DGQ=",
+			"path": "tidb/util/printer",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "/1SX7BcQgRpL91Z+DdJUP9uuu5A=",
+			"path": "tidb/util/ranger",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "xcDGVdqP3HP5qkpgK0WWNp0YDgE=",
+			"path": "tidb/util/rowDecoder",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "Dr6CyTkSBHcbHeaDFE+P4uvTTjM=",
+			"path": "tidb/util/schemautil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "kuAgweO0S5w9NrIDueIt9B2xrq0=",
+			"path": "tidb/util/set",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "i0qpXGpIhoDa1hVfV0CVpvZ6WA0=",
+			"path": "tidb/util/signal",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "cF9R1ExxTrzvyN5YT06ocFgCbNU=",
+			"path": "tidb/util/sqlexec",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "ajBZa2Tlxn0/FLUTtPSmVMOYVpo=",
+			"path": "tidb/util/stringutil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "7J0H6qsOF2l5xf3wD+t93mIzWrA=",
+			"path": "tidb/util/systimemon",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "sVN8BvYO4DiSjKZiNqThk0fBX0I=",
+			"path": "tidb/util/testkit",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "A+XuPuXBLxAzZkFrM/3K8zA6JvQ=",
+			"path": "tidb/util/testleak",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "kQcmNhmKbocf5qotSoIf3+pn7zs=",
+			"path": "tidb/util/testutil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "eVmad1M2xrjTO0asUgqajT2lcUE=",
+			"path": "tidb/util/timeutil",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "O63nAxfNi5h/daAUiBNdzfLcjv8=",
+			"path": "tidb/util/tracing",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
+		},
+		{
+			"checksumSHA1": "O2Ohd0K+iSSYew5LQpVF9HbUv8E=",
+			"path": "tidb/x-server",
+			"revision": "a561cca3ab61aa3856f8e87a041124f3b04ef563",
+			"revisionTime": "2018-12-26T10:45:08Z"
 		}
 	],
-	"rootPath": "github.com/pingcap/tidb"
+	"rootPath": "tidb"
 }

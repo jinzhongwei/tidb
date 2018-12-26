@@ -416,7 +416,7 @@ No
 
 ## Open issues (if applicable)
 
-- https://github.com/pingcap/tidb/issues/7205
-- https://github.com/pingcap/tidb/issues/7395
-- https://github.com/pingcap/tidb/issues/6895
-- https://github.com/pingcap/tidb/issues/6933
+- https://tidb/issues/7205
+- https://tidb/issues/7395
+- https://tidb/issues/6895
+- https://tidb/issues/6933

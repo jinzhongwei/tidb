@@ -2,7 +2,7 @@
 
 - Author(s):     [tiancaiamao](https://github.com/tiancaiamao)
 - Last updated:  2018-10-19
-- Discussion at: https://github.com/pingcap/tidb/issues/7907
+- Discussion at: https://tidb/issues/7907
 
 ## Abstract
 
@@ -144,4 +144,4 @@ Functions allowed in partition expressions https://dev.mysql.com/doc/refman/5.7/
 
 ## Open issues (if applicable)
 
-[https://github.com/pingcap/tidb/issues/7516](https://github.com/pingcap/tidb/issues/7516)
+[https://tidb/issues/7516](https://tidb/issues/7516)

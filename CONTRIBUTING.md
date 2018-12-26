@@ -35,7 +35,7 @@ In order to save reviewers' time, each issue should be filed with template and s
 
 ### Is this a simple bug fix?
 
-Bug fixes usually come with tests. With the help of continuous integration test, patches can be easy to review. Please update the unit tests so that they catch the bug! Please check example [here](https://github.com/pingcap/tidb/pull/2808).
+Bug fixes usually come with tests. With the help of continuous integration test, patches can be easy to review. Please update the unit tests so that they catch the bug! Please check example [here](https://tidb/pull/2808).
 
 ### Is this an architecture improvement?
 
@@ -46,7 +46,7 @@ Some examples of "Architecture" improvements:
 - Decoupling logic or creation of new utilities.
 - Making code more resilient (sleeps, backoffs, reducing flakiness, etc).
 
-If you are improving the quality of code, then justify/state exactly what you are 'cleaning up' in your Pull Request so as to save reviewers' time. An example will be this [pull request](https://github.com/pingcap/tidb/pull/3113).
+If you are improving the quality of code, then justify/state exactly what you are 'cleaning up' in your Pull Request so as to save reviewers' time. An example will be this [pull request](https://tidb/pull/3113).
 
 If you're making code more resilient, test it locally to demonstrate how exactly your patch changes
 things.
@@ -284,5 +284,5 @@ you can use one of some generic reasons like "Improve documentation.",
 [Os X GNU tools]: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x
 [go-1.8]: https://blog.golang.org/go1.8
 [go-workspace]: https://golang.org/doc/code.html#Workspaces
-[issue]: https://github.com/pingcap/tidb/issues
+[issue]: https://tidb/issues
 [mercurial]: http://mercurial.selenic.com/wiki/Download

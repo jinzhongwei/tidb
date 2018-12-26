@@ -88,7 +88,7 @@ For DP-SUB:
 4. Get the final result.
 5. Note that we can ignore the `OtherCondition` in TiDB since we cannot calculate the selectivity of it. It won’t influence the join reorder’s estimation.
 
-[PR#8025](https://github.com/pingcap/tidb/pull/8025) contains step 3 and 4. Step 2 is done when extract the join group. Step 1 and 5 will be involved in the future pull request.
+[PR#8025](https://tidb/pull/8025) contains step 3 and 4. Step 2 is done when extract the join group. Step 1 and 5 will be involved in the future pull request.
 
 
 ## Future

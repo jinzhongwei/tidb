@@ -11,14 +11,14 @@ RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/
 
 COPY . /go/src/github.com/pingcap/tidb
 
-WORKDIR /go/src/github.com/pingcap/tidb/
+WORKDIR /go/src/tidb/
 
 RUN make
 
 # Executable image
 FROM scratch
 
-COPY --from=builder /go/src/github.com/pingcap/tidb/bin/tidb-server /tidb-server
+COPY --from=builder /go/src/tidb/bin/tidb-server /tidb-server
 COPY --from=builder /usr/local/bin/dumb-init /usr/local/bin/dumb-init
 
 

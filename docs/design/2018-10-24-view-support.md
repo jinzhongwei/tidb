@@ -2,7 +2,7 @@
 
 - Author(s):     AndrewDi
 - Last updated:  2018-12-03
-- Discussion at: https://github.com/pingcap/tidb/issues/7974
+- Discussion at: https://tidb/issues/7974
 
 ## Abstract
 This proposal proposes to implement basic VIEW feature in TiDB, aimed to make SQL easier to write. VIEW's advanced feature would be considered later.
@@ -134,4 +134,4 @@ Here is the work items list:
 |Support global sql_mode system variable|P3| | |
 
 ## Open issues (if applicable)
-https://github.com/pingcap/tidb/issues/7974
+https://tidb/issues/7974

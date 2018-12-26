@@ -2,38 +2,38 @@
 All notable changes to this project will be documented in this file. See also [Release Notes](https://github.com/pingcap/docs/blob/master/releases/rn.md), [TiKV Changelog](https://github.com/tikv/tikv/blob/master/CHANGELOG.md) and [PD Changelog](https://github.com/pingcap/pd/blob/master/CHANGELOG.md).
 
 ## [2.1.2] 2018-12-21
-* Make TiDB compatible with TiDB-Binlog of the Kafka version [#8747](https://github.com/pingcap/tidb/pull/8747)
-* Improve the exit mechanism of TiDB in a rolling update [#8707](https://github.com/pingcap/tidb/pull/8707)
-* Fix the panic issue caused by adding the index for the generated column in some cases [#8676](https://github.com/pingcap/tidb/pull/8676)
-* Fix the issue that the optimizer cannot find the optimal query plan when `TIDB_SMJ Hint` exists in the SQL statement in some cases [#8729](https://github.com/pingcap/tidb/pull/8729)
-* Fix the issue that `AntiSemiJoin` returns an incorrect result in some cases [#8730](https://github.com/pingcap/tidb/pull/8730)
-* Improve the valid character check of the `utf8` character set [#8754](https://github.com/pingcap/tidb/pull/8754)
-* Fix the issue that the field of the time type might return an incorrect result when the write operation is performed before the read operation in a transaction [#8746](https://github.com/pingcap/tidb/pull/8746)
+* Make TiDB compatible with TiDB-Binlog of the Kafka version [#8747](https://tidb/pull/8747)
+* Improve the exit mechanism of TiDB in a rolling update [#8707](https://tidb/pull/8707)
+* Fix the panic issue caused by adding the index for the generated column in some cases [#8676](https://tidb/pull/8676)
+* Fix the issue that the optimizer cannot find the optimal query plan when `TIDB_SMJ Hint` exists in the SQL statement in some cases [#8729](https://tidb/pull/8729)
+* Fix the issue that `AntiSemiJoin` returns an incorrect result in some cases [#8730](https://tidb/pull/8730)
+* Improve the valid character check of the `utf8` character set [#8754](https://tidb/pull/8754)
+* Fix the issue that the field of the time type might return an incorrect result when the write operation is performed before the read operation in a transaction [#8746](https://tidb/pull/8746)
 
 
 ## [2.1.1] 2018-12-12
 
 ### SQL Optimizer/Executor
 
-* Fix the round error of the negative date [#8574](https://github.com/pingcap/tidb/pull/8574)
-* Fix the issue that the `uncompress` function does not check the data length [#8606](https://github.com/pingcap/tidb/pull/8606)
-* Reset bind arguments of the `prepare` statement after the `execute` command is executed [#8652](https://github.com/pingcap/tidb/pull/8652)
-* Support automatically collecting the statistics information of a partition table [#8649](https://github.com/pingcap/tidb/pull/8649)
-* Fix the wrongly configured integer type when pushing down the `abs` function [#8628](https://github.com/pingcap/tidb/pull/8628)
-* Fix the data race on the JSON column [#8660](https://github.com/pingcap/tidb/pull/8660)
+* Fix the round error of the negative date [#8574](https://tidb/pull/8574)
+* Fix the issue that the `uncompress` function does not check the data length [#8606](https://tidb/pull/8606)
+* Reset bind arguments of the `prepare` statement after the `execute` command is executed [#8652](https://tidb/pull/8652)
+* Support automatically collecting the statistics information of a partition table [#8649](https://tidb/pull/8649)
+* Fix the wrongly configured integer type when pushing down the `abs` function [#8628](https://tidb/pull/8628)
+* Fix the data race on the JSON column [#8660](https://tidb/pull/8660)
 
 ### Server
 
-* Fix the issue that the transaction obtained TSO is incorrect when PD breaks down [#8567](https://github.com/pingcap/tidb/pull/8567)
-* Fix the bootstrap failure caused by the statement that does not conform to ANSI standards [#8576](https://github.com/pingcap/tidb/pull/8576)
-* Fix the issue that incorrect parameters are used in transaction retries [#8638](https://github.com/pingcap/tidb/pull/8638)
+* Fix the issue that the transaction obtained TSO is incorrect when PD breaks down [#8567](https://tidb/pull/8567)
+* Fix the bootstrap failure caused by the statement that does not conform to ANSI standards [#8576](https://tidb/pull/8576)
+* Fix the issue that incorrect parameters are used in transaction retries [#8638](https://tidb/pull/8638)
 
 ### DDL
 
-* Change the default character set and collation of tables into `utf8mb4` [#8590](https://github.com/pingcap/tidb/pull/8590)
-* Add the `ddl_reorg_batch_size` variable to control the speed of adding indexes [#8614](https://github.com/pingcap/tidb/pull/8614)
-* Make the character set and collation options content in DDL case-insensitive [#8611](https://github.com/pingcap/tidb/pull/8611)
-* Fix the issue of adding indexes for generated columns [#8655](https://github.com/pingcap/tidb/pull/8655)
+* Change the default character set and collation of tables into `utf8mb4` [#8590](https://tidb/pull/8590)
+* Add the `ddl_reorg_batch_size` variable to control the speed of adding indexes [#8614](https://tidb/pull/8614)
+* Make the character set and collation options content in DDL case-insensitive [#8611](https://tidb/pull/8611)
+* Fix the issue of adding indexes for generated columns [#8655](https://tidb/pull/8655)
 
 ## [2.1.0-GA] 2018-11-30
 
@@ -84,7 +84,7 @@ All notable changes to this project will be documented in this file. See also [R
 ### Server
 * Support queuing the locally conflicted transactions within tidb-server instance to optimize the performance of conflicted transactions
 * Support Server Side Cursor
-* Add the [HTTP API](https://github.com/pingcap/tidb/blob/master/docs/tidb_http_api.md)
+* Add the [HTTP API](https://tidb/blob/master/docs/tidb_http_api.md)
     - Scatter the distribution of table Regions in the TiKV cluster
     - Control whether to open the `general log`
     - Support modifying the log level online
@@ -103,7 +103,7 @@ All notable changes to this project will be documented in this file. See also [R
 * Support the `ALTER TABLE FORCE` syntax
 * Support the `ALTER TABLE RENAME KEY TO` syntax
 * Add the table name and database name in the output information of `admin show ddl jobs`
-* [Support using the `ddl/owner/resign` HTTP interface to release the DDL owner and start electing a new DDL owner](https://github.com/pingcap/tidb/blob/master/docs/tidb_http_api.md)
+* [Support using the `ddl/owner/resign` HTTP interface to release the DDL owner and start electing a new DDL owner](https://tidb/blob/master/docs/tidb_http_api.md)
 
 ### Compatibility
 * Support more MySQL syntaxes
@@ -116,144 +116,144 @@ All notable changes to this project will be documented in this file. See also [R
 
 ## [2.1.0-rc.5] - 2018-11-12
 ### SQL Optimizer
-* Fix the issue that `IndexReader` reads the wrong handle in some cases [#8132](https://github.com/pingcap/tidb/pull/8132)
-* Fix the issue occurred while the `IndexScan Prepared` statement uses `Plan Cache` [#8055](https://github.com/pingcap/tidb/pull/8055)
-* Fix the issue that the result of the `Union` statement is unstable [#8165](https://github.com/pingcap/tidb/pull/8165)
+* Fix the issue that `IndexReader` reads the wrong handle in some cases [#8132](https://tidb/pull/8132)
+* Fix the issue occurred while the `IndexScan Prepared` statement uses `Plan Cache` [#8055](https://tidb/pull/8055)
+* Fix the issue that the result of the `Union` statement is unstable [#8165](https://tidb/pull/8165)
 ### SQL Execution Engine
-* Improve the performance of TiDB on inserting or updating wide tables [#8024](https://github.com/pingcap/tidb/pull/8024)
-* Support the unsigned `int` flag in the `Truncate` built-in function [#8068](https://github.com/pingcap/tidb/pull/8068)
-* Fix the error occurred while converting JSON data to the decimal type [#8109](https://github.com/pingcap/tidb/pull/8109)
-* Fix the error occurred when you `Update` the float type [#8170](https://github.com/pingcap/tidb/pull/8170)
+* Improve the performance of TiDB on inserting or updating wide tables [#8024](https://tidb/pull/8024)
+* Support the unsigned `int` flag in the `Truncate` built-in function [#8068](https://tidb/pull/8068)
+* Fix the error occurred while converting JSON data to the decimal type [#8109](https://tidb/pull/8109)
+* Fix the error occurred when you `Update` the float type [#8170](https://tidb/pull/8170)
 ### Statistics
-* Fix the incorrect statistics issue during point queries in some cases [#8035](https://github.com/pingcap/tidb/pull/8035)
-* Fix the selectivity estimation of statistics for primary key in some cases [#8149](https://github.com/pingcap/tidb/pull/8149)
-* Fix the issue that the statistics of deleted tables are not cleared up for a long period of time [#8182](https://github.com/pingcap/tidb/pull/8182)
+* Fix the incorrect statistics issue during point queries in some cases [#8035](https://tidb/pull/8035)
+* Fix the selectivity estimation of statistics for primary key in some cases [#8149](https://tidb/pull/8149)
+* Fix the issue that the statistics of deleted tables are not cleared up for a long period of time [#8182](https://tidb/pull/8182)
 ### Server
 * Improve the readability of logs and make logs better
-    - [#8063](https://github.com/pingcap/tidb/pull/8063)
-    - [#8053](https://github.com/pingcap/tidb/pull/8053)
-    - [#8224](https://github.com/pingcap/tidb/pull/8224)
-* Fix the error occurred when obtaining the table data of `infoschema.profiling` [#8096](https://github.com/pingcap/tidb/pull/8096)
-* Replace the unix socket with the pumps client to write binlogs [#8098](https://github.com/pingcap/tidb/pull/8098)
-* Add the threshold value for the `tidb_slow_log_threshold` environment variable, which dynamically sets the slow log [#8094](https://github.com/pingcap/tidb/pull/8094)
-* Add the original length of a SQL statement truncated while the `tidb_query_log_max_len` environment variable dynamically sets logs [8200](https://github.com/pingcap/tidb/pull/8200)
-* Add the `tidb_opt_write_row_id` environment variable to control whether to allow writing `_tidb_rowid` [#8218](https://github.com/pingcap/tidb/pull/8218)
-* Add an upper bound to the `Scan` command of ticlient, to avoid overbound scan [#8081](https://github.com/pingcap/tidb/pull/8081), [#8247](https://github.com/pingcap/tidb/pull/8247)    
+    - [#8063](https://tidb/pull/8063)
+    - [#8053](https://tidb/pull/8053)
+    - [#8224](https://tidb/pull/8224)
+* Fix the error occurred when obtaining the table data of `infoschema.profiling` [#8096](https://tidb/pull/8096)
+* Replace the unix socket with the pumps client to write binlogs [#8098](https://tidb/pull/8098)
+* Add the threshold value for the `tidb_slow_log_threshold` environment variable, which dynamically sets the slow log [#8094](https://tidb/pull/8094)
+* Add the original length of a SQL statement truncated while the `tidb_query_log_max_len` environment variable dynamically sets logs [8200](https://tidb/pull/8200)
+* Add the `tidb_opt_write_row_id` environment variable to control whether to allow writing `_tidb_rowid` [#8218](https://tidb/pull/8218)
+* Add an upper bound to the `Scan` command of ticlient, to avoid overbound scan [#8081](https://tidb/pull/8081), [#8247](https://tidb/pull/8247)    
 ### DDL
-* Fix the issue that executing DDL statements in transactions encounters an error in some cases [#8056](https://github.com/pingcap/tidb/pull/8056)
-* Fix the issue that executing `truncate table` in partition tables does not take effect [#8103](https://github.com/pingcap/tidb/pull/8103)
-* Fix the issue that the DDL operation does not roll back correctly after being cancelled in some cases [#8057](https://github.com/pingcap/tidb/pull/8057) 
-* Add the `admin show next_row_id` command to return the next available row ID [#8268](https://github.com/pingcap/tidb/pull/8268)  
+* Fix the issue that executing DDL statements in transactions encounters an error in some cases [#8056](https://tidb/pull/8056)
+* Fix the issue that executing `truncate table` in partition tables does not take effect [#8103](https://tidb/pull/8103)
+* Fix the issue that the DDL operation does not roll back correctly after being cancelled in some cases [#8057](https://tidb/pull/8057) 
+* Add the `admin show next_row_id` command to return the next available row ID [#8268](https://tidb/pull/8268)  
 
 
 ## [2.1.0-rc.4] - 2018-10-23
 ### SQL Optimizer
-* Fix the issue that column pruning of `UnionAll` is incorrect in some cases [#7941](https://github.com/pingcap/tidb/pull/7941)
-* Fix the issue that the result of the `UnionAll` operator is incorrect in some cases [#8007](https://github.com/pingcap/tidb/pull/8007)
+* Fix the issue that column pruning of `UnionAll` is incorrect in some cases [#7941](https://tidb/pull/7941)
+* Fix the issue that the result of the `UnionAll` operator is incorrect in some cases [#8007](https://tidb/pull/8007)
 ### SQL Execution Engine
-* Fix the precision issue of the `AVG` function [#7874](https://github.com/pingcap/tidb/pull/7874)
-* Support using the `EXPLAIN ANALYZE` statement to check the runtime statistics including the execution time and the number of returned rows of each operator during the query execution process [#7925](https://github.com/pingcap/tidb/pull/7925)
-* Fix the panic issue of the `PointGet` operator when a column of a table appears multiple times in the result set [#7943](https://github.com/pingcap/tidb/pull/7943)
-* Fix the panic issue caused by too large values in the `Limit` subclause [#8002](https://github.com/pingcap/tidb/pull/8002)
-* Fix the panic issue during the execution process of the `AddDate`/`SubDate` statement in some cases [#8009](https://github.com/pingcap/tidb/pull/8009)
+* Fix the precision issue of the `AVG` function [#7874](https://tidb/pull/7874)
+* Support using the `EXPLAIN ANALYZE` statement to check the runtime statistics including the execution time and the number of returned rows of each operator during the query execution process [#7925](https://tidb/pull/7925)
+* Fix the panic issue of the `PointGet` operator when a column of a table appears multiple times in the result set [#7943](https://tidb/pull/7943)
+* Fix the panic issue caused by too large values in the `Limit` subclause [#8002](https://tidb/pull/8002)
+* Fix the panic issue during the execution process of the `AddDate`/`SubDate` statement in some cases [#8009](https://tidb/pull/8009)
 ### Statistics
-* Fix the issue of judging the prefix of the histogram low-bound of the combined index as out of range [#7856](https://github.com/pingcap/tidb/pull/7856)
-* Fix the memory leak issue caused by statistics collecting [#7873](https://github.com/pingcap/tidb/pull/7873)
-* Fix the panic issue when the histogram is empty [#7928](https://github.com/pingcap/tidb/pull/7928)
-* Fix the issue that the histogram bound is out of range when the statistics is being uploaded [#7944](https://github.com/pingcap/tidb/pull/7944)
-* Limit the maximum length of values in the statistics sampling process [#7982](https://github.com/pingcap/tidb/pull/7982)
+* Fix the issue of judging the prefix of the histogram low-bound of the combined index as out of range [#7856](https://tidb/pull/7856)
+* Fix the memory leak issue caused by statistics collecting [#7873](https://tidb/pull/7873)
+* Fix the panic issue when the histogram is empty [#7928](https://tidb/pull/7928)
+* Fix the issue that the histogram bound is out of range when the statistics is being uploaded [#7944](https://tidb/pull/7944)
+* Limit the maximum length of values in the statistics sampling process [#7982](https://tidb/pull/7982)
 ### Server
-* Refactor Latch to avoid misjudgment of transaction conflicts and improve the execution performance of concurrent transactions [#7711](https://github.com/pingcap/tidb/pull/7711)
-* Fix the panic issue caused by collecting slow queries in some cases [#7874](https://github.com/pingcap/tidb/pull/7847)
-* Fix the panic issue when `ESCAPED BY` is an empty string in the `LOAD DATA` statement [#8005](https://github.com/pingcap/tidb/pull/8005)
-* Complete the “coprocessor error” log information [#8006](https://github.com/pingcap/tidb/pull/8006)
+* Refactor Latch to avoid misjudgment of transaction conflicts and improve the execution performance of concurrent transactions [#7711](https://tidb/pull/7711)
+* Fix the panic issue caused by collecting slow queries in some cases [#7874](https://tidb/pull/7847)
+* Fix the panic issue when `ESCAPED BY` is an empty string in the `LOAD DATA` statement [#8005](https://tidb/pull/8005)
+* Complete the “coprocessor error” log information [#8006](https://tidb/pull/8006)
 ### Compatibility
-* Set the `Command` field of the `SHOW PROCESSLIST` result to `Sleep` when the query is empty [#7839](https://github.com/pingcap/tidb/pull/7839)
+* Set the `Command` field of the `SHOW PROCESSLIST` result to `Sleep` when the query is empty [#7839](https://tidb/pull/7839)
 ### Expressions
-* Fix the constant folding issue of the `SYSDATE` function [#7895](https://github.com/pingcap/tidb/pull/7895)
-* Fix the issue that `SUBSTRING_INDEX` panics in some cases [#7897](https://github.com/pingcap/tidb/pull/7897)
+* Fix the constant folding issue of the `SYSDATE` function [#7895](https://tidb/pull/7895)
+* Fix the issue that `SUBSTRING_INDEX` panics in some cases [#7897](https://tidb/pull/7897)
 ### DDL
-* Fix the stack overflow issue caused by throwing the `invalid ddl job type` error [#7958](https://github.com/pingcap/tidb/pull/7958)
-* Fix the issue that the result of `ADMIN CHECK TABLE` is incorrect in some cases [#7975](https://github.com/pingcap/tidb/pull/7975)
+* Fix the stack overflow issue caused by throwing the `invalid ddl job type` error [#7958](https://tidb/pull/7958)
+* Fix the issue that the result of `ADMIN CHECK TABLE` is incorrect in some cases [#7975](https://tidb/pull/7975)
 
 
 ## [2.1.0-rc.2] - 2018-09-14
 ### SQL Optimizer
-* Put forward a proposal of the next generation Planner [#7543](https://github.com/pingcap/tidb/pull/7543)
-* Improve the optimization rules of constant propagation [#7276](https://github.com/pingcap/tidb/pull/7276)
-* Enhance the computing logic of `Range` to enable it to handle multiple `IN` or `EQUAL` conditions simultaneously [#7577](https://github.com/pingcap/tidb/pull/7577)
-* Fix the issue that the estimation result of `TableScan` is incorrect when `Range` is empty [#7583](https://github.com/pingcap/tidb/pull/7583)
-* Support the `PointGet` operator for the `UPDATE` statement [#7586](https://github.com/pingcap/tidb/pull/7586)
-* Fix the panic issue during the process of executing the `FirstRow` aggregate function in some conditions [#7624](https://github.com/pingcap/tidb/pull/7624)
+* Put forward a proposal of the next generation Planner [#7543](https://tidb/pull/7543)
+* Improve the optimization rules of constant propagation [#7276](https://tidb/pull/7276)
+* Enhance the computing logic of `Range` to enable it to handle multiple `IN` or `EQUAL` conditions simultaneously [#7577](https://tidb/pull/7577)
+* Fix the issue that the estimation result of `TableScan` is incorrect when `Range` is empty [#7583](https://tidb/pull/7583)
+* Support the `PointGet` operator for the `UPDATE` statement [#7586](https://tidb/pull/7586)
+* Fix the panic issue during the process of executing the `FirstRow` aggregate function in some conditions [#7624](https://tidb/pull/7624)
 ### SQL Execution Engine
-* Fix the potential `DataRace` issue when the `HashJoin` operator encounters an error [#7554](https://github.com/pingcap/tidb/pull/7554)
-* Make the `HashJoin` operator read the inner table and build the hash table simultaneously [#7544](https://github.com/pingcap/tidb/pull/7544)
-* Optimize the performance of Hash aggregate operators [#7541](https://github.com/pingcap/tidb/pull/7541)
-* Optimize the performance of Join operators [#7493](https://github.com/pingcap/tidb/pull/7493), [#7433](https://github.com/pingcap/tidb/pull/7433)
-* Fix the issue that the result of `UPDATE JOIN` is incorrect when the Join order is changed [#7571](https://github.com/pingcap/tidb/pull/7571)
-* Improve the performance of Chunk’s iterator [#7585](https://github.com/pingcap/tidb/pull/7585)
+* Fix the potential `DataRace` issue when the `HashJoin` operator encounters an error [#7554](https://tidb/pull/7554)
+* Make the `HashJoin` operator read the inner table and build the hash table simultaneously [#7544](https://tidb/pull/7544)
+* Optimize the performance of Hash aggregate operators [#7541](https://tidb/pull/7541)
+* Optimize the performance of Join operators [#7493](https://tidb/pull/7493), [#7433](https://tidb/pull/7433)
+* Fix the issue that the result of `UPDATE JOIN` is incorrect when the Join order is changed [#7571](https://tidb/pull/7571)
+* Improve the performance of Chunk’s iterator [#7585](https://tidb/pull/7585)
 ### Statistics
-* Fix the issue that the auto Analyze work repeatedly analyzes the statistics [#7550](https://github.com/pingcap/tidb/pull/7550)
-* Fix the statistics update error that occurs when there is no statistics change [#7530](https://github.com/pingcap/tidb/pull/7530)
-* Use the RC isolation level and low priority when building `Analyze` requests [#7496](https://github.com/pingcap/tidb/pull/7496)
-* Support enabling statistics auto-analyze on certain period of a day [#7570](https://github.com/pingcap/tidb/pull/7570)
-* Fix the panic issue when logging the statistics information [#7588](https://github.com/pingcap/tidb/pull/7588)
-* Support configuring the number of buckets in the histogram using the `ANALYZE TABLE WITH BUCKETS` statement [#7619](https://github.com/pingcap/tidb/pull/7619)
-* Fix the panic issue when updating an empty histogram [#7640](https://github.com/pingcap/tidb/pull/7640)
-* Update `information_schema.tables.data_length` using the statistics information [#7657](https://github.com/pingcap/tidb/pull/7657)
+* Fix the issue that the auto Analyze work repeatedly analyzes the statistics [#7550](https://tidb/pull/7550)
+* Fix the statistics update error that occurs when there is no statistics change [#7530](https://tidb/pull/7530)
+* Use the RC isolation level and low priority when building `Analyze` requests [#7496](https://tidb/pull/7496)
+* Support enabling statistics auto-analyze on certain period of a day [#7570](https://tidb/pull/7570)
+* Fix the panic issue when logging the statistics information [#7588](https://tidb/pull/7588)
+* Support configuring the number of buckets in the histogram using the `ANALYZE TABLE WITH BUCKETS` statement [#7619](https://tidb/pull/7619)
+* Fix the panic issue when updating an empty histogram [#7640](https://tidb/pull/7640)
+* Update `information_schema.tables.data_length` using the statistics information [#7657](https://tidb/pull/7657)
 ### Server
-* Add Trace related dependencies [#7532](https://github.com/pingcap/tidb/pull/7532)
-* Enable the `mutex profile` feature of Golang  [#7512](https://github.com/pingcap/tidb/pull/7512)
-* The `Admin` statement requires the `Super_priv` privilege [#7486](https://github.com/pingcap/tidb/pull/7486)
-* Forbid users to `Drop` crucial system tables [#7471](https://github.com/pingcap/tidb/pull/7471)
-* Switch from `juju/errors` to `pkg/errors` [#7151](https://github.com/pingcap/tidb/pull/7151)
-* Complete the functional prototype of SQL Tracing [#7016](https://github.com/pingcap/tidb/pull/7016)
-* Remove the goroutine pool [#7564](https://github.com/pingcap/tidb/pull/7564)
-* Support viewing the goroutine information using the `USER1` signal [#7587](https://github.com/pingcap/tidb/pull/7587)
-* Set the internal SQL to high priority while TiDB is started [#7616](https://github.com/pingcap/tidb/pull/7616)
-* Use different labels to filter internal SQL and user SQL in monitoring metrics [#7631](https://github.com/pingcap/tidb/pull/7631)
-* Store the top 30 slow queries in the last week to the TiDB server [#7646](https://github.com/pingcap/tidb/pull/7646)
-* Put forward a proposal of setting the global system time zone for the TiDB cluster [#7656](https://github.com/pingcap/tidb/pull/7656)
-* Enrich the error message of “GC life time is shorter than transaction duration” [#7658](https://github.com/pingcap/tidb/pull/7658)
-* Set the global system time zone when starting the TiDB cluster [#7638](https://github.com/pingcap/tidb/pull/7638)
+* Add Trace related dependencies [#7532](https://tidb/pull/7532)
+* Enable the `mutex profile` feature of Golang  [#7512](https://tidb/pull/7512)
+* The `Admin` statement requires the `Super_priv` privilege [#7486](https://tidb/pull/7486)
+* Forbid users to `Drop` crucial system tables [#7471](https://tidb/pull/7471)
+* Switch from `juju/errors` to `pkg/errors` [#7151](https://tidb/pull/7151)
+* Complete the functional prototype of SQL Tracing [#7016](https://tidb/pull/7016)
+* Remove the goroutine pool [#7564](https://tidb/pull/7564)
+* Support viewing the goroutine information using the `USER1` signal [#7587](https://tidb/pull/7587)
+* Set the internal SQL to high priority while TiDB is started [#7616](https://tidb/pull/7616)
+* Use different labels to filter internal SQL and user SQL in monitoring metrics [#7631](https://tidb/pull/7631)
+* Store the top 30 slow queries in the last week to the TiDB server [#7646](https://tidb/pull/7646)
+* Put forward a proposal of setting the global system time zone for the TiDB cluster [#7656](https://tidb/pull/7656)
+* Enrich the error message of “GC life time is shorter than transaction duration” [#7658](https://tidb/pull/7658)
+* Set the global system time zone when starting the TiDB cluster [#7638](https://tidb/pull/7638)
 ### Compatibility
-* Add the unsigned flag for the `Year` type [#7542](https://github.com/pingcap/tidb/pull/7542)
-* Fix the issue of configuring the result length of the `Year` type in the `Prepare`/`Execute` mode [#7525](https://github.com/pingcap/tidb/pull/7525)
-* Fix the issue of inserting zero timestamp in the `Prepare`/`Execute` mode [#7506](https://github.com/pingcap/tidb/pull/7506)
-* Fix the error handling issue of the integer division [#7492](https://github.com/pingcap/tidb/pull/7492)
-* Fix the compatibility issue when processing `ComStmtSendLongData` [#7485](https://github.com/pingcap/tidb/pull/7485)
-* Fix the error handling issue during the process of converting string to integer [#7483](https://github.com/pingcap/tidb/pull/7483)
-* Optimize the accuracy of values in the `information_schema.columns_in_table` table [#7463](https://github.com/pingcap/tidb/pull/7463)
-* Fix the compatibility issue when writing or updating the string type of data using the MariaDB client [#7573](https://github.com/pingcap/tidb/pull/7573)
-* Fix the compatibility issue of aliases of the returned value [#7600](https://github.com/pingcap/tidb/pull/7600)
-* Fix the issue that the `NUMERIC_SCALE` value of the float type is incorrect in the `information_schema.COLUMNS` table [#7602](https://github.com/pingcap/tidb/pull/7602)
-* Fix the issue that Parser reports an error when the single line comment is empty [#7612](https://github.com/pingcap/tidb/pull/7612)
+* Add the unsigned flag for the `Year` type [#7542](https://tidb/pull/7542)
+* Fix the issue of configuring the result length of the `Year` type in the `Prepare`/`Execute` mode [#7525](https://tidb/pull/7525)
+* Fix the issue of inserting zero timestamp in the `Prepare`/`Execute` mode [#7506](https://tidb/pull/7506)
+* Fix the error handling issue of the integer division [#7492](https://tidb/pull/7492)
+* Fix the compatibility issue when processing `ComStmtSendLongData` [#7485](https://tidb/pull/7485)
+* Fix the error handling issue during the process of converting string to integer [#7483](https://tidb/pull/7483)
+* Optimize the accuracy of values in the `information_schema.columns_in_table` table [#7463](https://tidb/pull/7463)
+* Fix the compatibility issue when writing or updating the string type of data using the MariaDB client [#7573](https://tidb/pull/7573)
+* Fix the compatibility issue of aliases of the returned value [#7600](https://tidb/pull/7600)
+* Fix the issue that the `NUMERIC_SCALE` value of the float type is incorrect in the `information_schema.COLUMNS` table [#7602](https://tidb/pull/7602)
+* Fix the issue that Parser reports an error when the single line comment is empty [#7612](https://tidb/pull/7612)
 ### Expressions
-* Check the value of `max_allowed_packet` in the `insert` function [#7528](https://github.com/pingcap/tidb/pull/7528)
-* Support the built-in function `json_contains`  [#7443](https://github.com/pingcap/tidb/pull/7443)
-* Support the built-in function `json_contains_path` [#7596](https://github.com/pingcap/tidb/pull/7596)
-* Support the built-in function `encode/decode` [#7622](https://github.com/pingcap/tidb/pull/7622)
-* Fix the issue that some time related functions are not compatible with the MySQL behaviors in some cases [#7636](https://github.com/pingcap/tidb/pull/7636)
-* Fix the compatibility issue of parsing the time type of data in string [#7654](https://github.com/pingcap/tidb/pull/7654)
-* Fix the issue that the time zone is not considered when computing the default value of the `DateTime` data [#7655](https://github.com/pingcap/tidb/pull/7655)
+* Check the value of `max_allowed_packet` in the `insert` function [#7528](https://tidb/pull/7528)
+* Support the built-in function `json_contains`  [#7443](https://tidb/pull/7443)
+* Support the built-in function `json_contains_path` [#7596](https://tidb/pull/7596)
+* Support the built-in function `encode/decode` [#7622](https://tidb/pull/7622)
+* Fix the issue that some time related functions are not compatible with the MySQL behaviors in some cases [#7636](https://tidb/pull/7636)
+* Fix the compatibility issue of parsing the time type of data in string [#7654](https://tidb/pull/7654)
+* Fix the issue that the time zone is not considered when computing the default value of the `DateTime` data [#7655](https://tidb/pull/7655)
 ### DML
-* Set correct `last_insert_id` in the `InsertOnDuplicateUpdate` statement [#7534](https://github.com/pingcap/tidb/pull/7534)
-* Reduce the cases of updating the `auto_increment_id` counter [#7515](https://github.com/pingcap/tidb/pull/7515)
-* Optimize the error message of `Duplicate Key` [#7495](https://github.com/pingcap/tidb/pull/7495)
-* Fix the `insert...select...on duplicate key update` issue [#7406](https://github.com/pingcap/tidb/pull/7406)
-* Support the `LOAD DATA IGNORE LINES` statement [#7576](https://github.com/pingcap/tidb/pull/7576)
+* Set correct `last_insert_id` in the `InsertOnDuplicateUpdate` statement [#7534](https://tidb/pull/7534)
+* Reduce the cases of updating the `auto_increment_id` counter [#7515](https://tidb/pull/7515)
+* Optimize the error message of `Duplicate Key` [#7495](https://tidb/pull/7495)
+* Fix the `insert...select...on duplicate key update` issue [#7406](https://tidb/pull/7406)
+* Support the `LOAD DATA IGNORE LINES` statement [#7576](https://tidb/pull/7576)
 ### DDL
-* Add the DDL job type and the current schema version information in the monitor [#7472](https://github.com/pingcap/tidb/pull/7472)
-* Complete the design of the `Admin Restore Table` feature [#7383](https://github.com/pingcap/tidb/pull/7383)
-* Fix the issue that the default value of the `Bit` type exceeds 128 [#7249](https://github.com/pingcap/tidb/pull/7249)
-* Fix the issue that the default value of the `Bit` type cannot be `NULL` [#7604](https://github.com/pingcap/tidb/pull/7604)
-* Reduce the interval of checking `CREATE TABLE/DATABASE` in the DDL queue [#7608](https://github.com/pingcap/tidb/pull/7608)
-* Use the `ddl/owner/resign` HTTP interface ro release the DDL owner and start electing a new owner [#7649](https://github.com/pingcap/tidb/pull/7649)
+* Add the DDL job type and the current schema version information in the monitor [#7472](https://tidb/pull/7472)
+* Complete the design of the `Admin Restore Table` feature [#7383](https://tidb/pull/7383)
+* Fix the issue that the default value of the `Bit` type exceeds 128 [#7249](https://tidb/pull/7249)
+* Fix the issue that the default value of the `Bit` type cannot be `NULL` [#7604](https://tidb/pull/7604)
+* Reduce the interval of checking `CREATE TABLE/DATABASE` in the DDL queue [#7608](https://tidb/pull/7608)
+* Use the `ddl/owner/resign` HTTP interface ro release the DDL owner and start electing a new owner [#7649](https://tidb/pull/7649)
 ### TiKV Go Client
-* Support the issue that the `Seek` operation only obtains `Key`  [#7419](https://github.com/pingcap/tidb/pull/7419)
-### [Table Partition](https://github.com/pingcap/tidb/projects/6) (Experimental)
-* Fix the issue that the `Bigint` type cannot be used as the partition key  [#7520](https://github.com/pingcap/tidb/pull/7520)
-* Support the rollback operation when an issue occurs during adding an index in the partitioned table [#7437](https://github.com/pingcap/tidb/pull/7437)
+* Support the issue that the `Seek` operation only obtains `Key`  [#7419](https://tidb/pull/7419)
+### [Table Partition](https://tidb/projects/6) (Experimental)
+* Fix the issue that the `Bigint` type cannot be used as the partition key  [#7520](https://tidb/pull/7520)
+* Support the rollback operation when an issue occurs during adding an index in the partitioned table [#7437](https://tidb/pull/7437)
 
 
 ## [2.0.0-rc.5] - 2018-04-17

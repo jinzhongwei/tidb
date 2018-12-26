@@ -8,7 +8,7 @@ Writing a design document can promote us to think deliberately and gather knowle
 
 ## Proprosal Process
 
-1. Before starting to write a design document, please [create a new issue](https://github.com/pingcap/tidb/issues/new/choose) for tracing the process of your design.
+1. Before starting to write a design document, please [create a new issue](https://tidb/issues/new/choose) for tracing the process of your design.
 2. Create a new [Google Doc](https://docs.google.com/document/u/0/) to write the design document. Pelase refer to this [proposal template](./TEMPLATE.md).
 3. If the design document is ready to be reviewed, please put the shared link with the `can comment` permission in the issue you've created, and one of our engineers will follow up this issue and keep it updated.
 4. If needed, we may organize a communications seminar through [Google Hangouts](https://hangouts.google.com/) to discuss your design with you and the interested friends from the community.
